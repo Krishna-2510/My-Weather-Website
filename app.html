@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <button id="curr">
+        Use current location
+    </button>
+    <video id="v" playsinline autoplay muted loop poster="mountainbg.jpg" id="bgvid">
+        <source  id="vid" src="video/sunsetvideo.mp4" type="video/mp4">
+      </video>
+    <div class="container">
+        <div class="inputbox">
+            <input id="cityname" type="text" placeholder="Enter the city name...">
+            <div class="but">
+                <button id="but">Show results</button>
+            </div>
+        </div>
+        <div class="weatherdata">
+            <div id="location">
+                <!-- Paris, France -->
+            </div>
+            <div id="date">
+                <!-- 5 September(Sunday) 2021 -->
+            </div>
+            <div id="temp">
+                <!-- 32&deg;C -->
+            </div>
+            <div id="feel">
+                <!-- Feels like 35&deg;C(max:37&deg;C/min:30&deg;C) -->
+            </div>
+            <div id="humid">
+                <!-- humidity:50% -->
+            </div>
+            <div id="type">
+                <!-- Sunny -->
+            </div>
+            <div id="icon">
+                <!-- <i class="fas fa-sun"></i>
+                <i class="fas fa-cloud-sun"></i>
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <i class="far fa-snowflake"></i>
+                <i class="fas fa-smog"></i>
+                <i class="fas fa-bolt"></i>
+                <i class="fas fa-braille"></i> -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>

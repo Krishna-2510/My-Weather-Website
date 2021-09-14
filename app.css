@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding:0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.container{
+    width: 70vh;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 10px;
+}
+input{
+    width:90%;
+    text-align: center;
+    font-size: 24px;
+    height: 40px;
+    border:none;
+    border-radius: 10px;
+}
+.inputbox{
+    padding: 20px;
+    text-align: center;
+    /* border: 2px solid white;
+    border-radius: 20px; */
+}
+.butt{
+    text-align: center;
+}
+button{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 40%;
+}
+button:hover{
+    background-color: rgb(4, 87, 197);
+    cursor: pointer;
+}
+.weatherdata{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+#temp{
+    font-size: 49px;
+    margin: 20px auto;
+}
+#feel{
+    font-size: 17px;
+}
+#humid{
+    font-size: 17px;
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #curr{
+    width: 160px;
+    margin: 10px;
+  }

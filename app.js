@@ -55,6 +55,18 @@ function showPosition(position) {
 
 function showWeather(weather) {
     console.log(weather);
+
+    if(weather?.cod === '404'){
+        document.querySelector('.noLocation').style.display = "block";
+        document.querySelector('.weatherdata').style.display = "none";
+        document.getElementById('vid').src = "video/sunsetvideo.mp4";
+        var v = document.getElementById('v');
+        v.load();
+        v.play();
+        var icon = document.getElementById('icon');
+        icon.innerHTML = '<i class="fas fa-smog"></i>';
+        return;
+    }
     
     var citynm=document.getElementById('cityname');
     citynm.value=`${weather.name}`;

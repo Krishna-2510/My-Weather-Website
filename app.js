@@ -68,6 +68,8 @@ function showWeather(weather) {
         return;
     }
     
+    document.querySelector('.noLocation').style.display = "none";
+
     var citynm=document.getElementById('cityname');
     citynm.value=`${weather.name}`;
 
